@@ -45,7 +45,7 @@ const data = [{
 {
     name: 'Ulat Tentara',
     gejala: ['Epidermis atau bagian atas daun rusak/transparan', 'Daun menguning', 'Tersisa hanya tulang daun pada tanaman', 'Hama memakan tunas dan bunga'],
-    solusi: 'Pemilihan Varietas yang Tahan: Pilih varietas krisan yang diketahui tahan terhadap penyakit embun jelaga jika memungkinkan. Varietas yang tahan memiliki kemampuan bawaan untuk melawan infeksi jamur dan dapat mengurangi risiko terkena penyakit.',
+    solusi: 'Penggunaan Pestisida: Penggunaan insektisida yang aman dan efektif dapat membantu mengendalikan populasi ulat tentara. Pastikan untuk mengikuti petunjuk penggunaan yang tertera pada label produk.',
     maxPoints: 4,
     point: []
 },
