@@ -1,0 +1,284 @@
+<%- include('../partials/form/header') %>
+
+
+  <div class="container py-5 my-4">
+    <form action="/gejala" method="post" class="form-check">
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Gejala</th>
+            <th scope="col" class="text-center">Kondisi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td> Apakah Memiliki Gejala Daun menguning?
+            </td>
+            <td class="d-flex justify-content-evenly">
+              <div class="mx-4">
+                <input type="radio" name="g1" id="y" value="y" class="form-check-input">
+                <label for="y" class="form-check-label">Ya</label>
+              </div>
+              <div>
+                <input type="radio" name="g1" id="t" value="t" class="form-check-input">
+                <label for="t" class="form-check-label">Tidak</label>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">2</th>
+            <td> Apakah Memiliki Gejala bintik putih pada tanaman?
+            </td>
+            <td class="d-flex justify-content-evenly">
+              <div class="mx-4">
+                <input type="radio" name="g2" id="y" value="y" class="form-check-input">
+                <label for="y" class="form-check-label">Ya</label>
+              </div>
+              <div>
+                <input type="radio" name="g2" id="t" value="t" class="form-check-input">
+                <label for="t" class="form-check-label">Tidak</label>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">3</th>
+            <td> Apakah Memiliki Gejala adanya alur berliku bekas kotoran berwarna putih?
+            </td>
+            <td class="d-flex justify-content-evenly">
+              <div class="mx-4">
+                <input type="radio" name="g3" id="y" value="y" class="form-check-input">
+                <label for="y" class="form-check-label">Ya</label>
+              </div>
+              <div>
+                <input type="radio" name="g3" id="t" value="t" class="form-check-input">
+                <label for="t" class="form-check-label">Tidak</label>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">4</th>
+            <td> Apakah Memiliki Gejala pucuk dan tunas-tunas samping berwarna keperak-perakan?
+            </td>
+            <td class="d-flex justify-content-evenly">
+              <div class="mx-4">
+                <input type="radio" name="g4" id="y" value="y" class="form-check-input">
+                <label for="y" class="form-check-label">Ya</label>
+              </div>
+              <div>
+                <input type="radio" name="g4" id="t" value="t" class="form-check-input">
+                <label for="t" class="form-check-label">Tidak</label>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">5</th>
+            <td> Apakah Memiliki Gejala serangan pada daun bagian bawah/seluruh daun?
+            </td>
+            <td class="d-flex justify-content-evenly">
+              <div class="mx-4">
+                <input type="radio" name="g5" id="y" value="y" class="form-check-input">
+                <label for="y" class="form-check-label">Ya</label>
+              </div>
+              <div>
+                <input type="radio" name="g5" id="t" value="t" class="form-check-input">
+                <label for="t" class="form-check-label">Tidak</label>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">6</th>
+            <td> Apakah Memiliki Gejala daun kerdil?
+            </td>
+            <td class="d-flex justify-content-evenly">
+              <div class="mx-4">
+                <input type="radio" name="g6" id="y" value="y" class="form-check-input">
+                <label for="y" class="form-check-label">Ya</label>
+              </div>
+              <div>
+                <input type="radio" name="g6" id="t" value="t" class="form-check-input">
+                <label for="t" class="form-check-label">Tidak</label>
+              </div>
+            </td>
+          </tr>
+
+
+          <tr>
+            <th scope="row">7</th>
+            <td> Apakah Memiliki Gejala daun cekung dan rapuh?
+            </td>
+            <td class="d-flex justify-content-evenly">
+              <div class="mx-4">
+                <input type="radio" name="g7" id="y" value="y" class="form-check-input">
+                <label for="y" class="form-check-label">Ya</label>
+              </div>
+              <div>
+                <input type="radio" name="g7" id="t" value="t" class="form-check-input">
+                <label for="t" class="form-check-label">Tidak</label>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">8</th>
+            <td> Apakah Memiliki Gejala permukaan daun bagian bawah berbintik coklat?
+            </td>
+            <td class="d-flex justify-content-evenly">
+              <div class="mx-4">
+                <input type="radio" name="g8" id="y" value="y" class="form-check-input">
+                <label for="y" class="form-check-label">Ya</label>
+              </div>
+              <div>
+                <input type="radio" name="g8" id="t" value="t" class="form-check-input">
+                <label for="t" class="form-check-label">Tidak</label>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">9</th>
+            <td> Apakah Memiliki Gejala bercak coklat pada daun?
+            </td>
+            <td class="d-flex justify-content-evenly">
+              <div class="mx-4">
+                <input type="radio" name="g9" id="y" value="y" class="form-check-input">
+                <label for="y" class="form-check-label">Ya</label>
+              </div>
+              <div>
+                <input type="radio" name="g9" id="t" value="t" class="form-check-input">
+                <label for="t" class="form-check-label">Tidak</label>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">10</th>
+            <td> Apakah Memiliki Gejala pertumbuhan bagian atas tanaman terhambat atau mati?
+            </td>
+            <td class="d-flex justify-content-evenly">
+              <div class="mx-4">
+                <input type="radio" name="g10" id="y" value="y" class="form-check-input">
+                <label for="y" class="form-check-label">Ya</label>
+              </div>
+              <div>
+                <input type="radio" name="g10" id="t" value="t" class="form-check-input">
+                <label for="t" class="form-check-label">Tidak</label>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">11</th>
+            <td> Apakah Memiliki Gejala daun layu dan gugur?
+            </td>
+            <td class="d-flex justify-content-evenly">
+              <div class="mx-4">
+                <input type="radio" name="g11" id="y" value="y" class="form-check-input">
+                <label for="y" class="form-check-label">Ya</label>
+              </div>
+              <div>
+                <input type="radio" name="g11" id="t" value="t" class="form-check-input">
+                <label for="t" class="form-check-label">Tidak</label>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">12</th>
+            <td> Apakah Memiliki Gejala layu permanen?
+            </td>
+            <td class="d-flex justify-content-evenly">
+              <div class="mx-4">
+                <input type="radio" name="g12" id="y" value="y" class="form-check-input">
+                <label for="y" class="form-check-label">Ya</label>
+              </div>
+              <div>
+                <input type="radio" name="g12" id="t" value="t" class="form-check-input">
+                <label for="t" class="form-check-label">Tidak</label>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">13</th>
+            <td> Apakah Memiliki Gejala tanaman membusuk atau mati?
+            </td>
+            <td class="d-flex justify-content-evenly">
+              <div class="mx-4">
+                <input type="radio" name="g13" id="y" value="y" class="form-check-input">
+                <label for="y" class="form-check-label">Ya</label>
+              </div>
+              <div>
+                <input type="radio" name="g13" id="t" value="t" class="form-check-input">
+                <label for="t" class="form-check-label">Tidak</label>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">14</th>
+            <td> Apakah Memiliki Gejala epidermis atau bagian atas daun rusak/transparan?
+            </td>
+            <td class="d-flex justify-content-evenly">
+              <div class="mx-4">
+                <input type="radio" name="g14" id="y" value="y" class="form-check-input">
+                <label for="y" class="form-check-label">Ya</label>
+              </div>
+              <div>
+                <input type="radio" name="g14" id="t" value="t" class="form-check-input">
+                <label for="t" class="form-check-label">Tidak</label>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">15</th>
+            <td> Apakah Memiliki Gejala tersisa hanya tulang daun pada tanaman?
+            </td>
+            <td class="d-flex justify-content-evenly">
+              <div class="mx-4">
+                <input type="radio" name="g15" id="y" value="y" class="form-check-input">
+                <label for="y" class="form-check-label">Ya</label>
+              </div>
+              <div>
+                <input type="radio" name="g15" id="t" value="t" class="form-check-input">
+                <label for="t" class="form-check-label">Tidak</label>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">16</th>
+            <td>
+              Apakah Memiliki Gejala hama memakan tunas dan bunga?
+            </td>
+            <td class="d-flex justify-content-evenly">
+              <div class="mx-4">
+                <input type="radio" name="g16" id="y" value="y" class="form-check-input">
+                <label for="y" class="form-check-label">Ya</label>
+              </div>
+              <div>
+                <input type="radio" name="g16" id="t" value="t" class="form-check-input">
+                <label for="t" class="form-check-label">Tidak</label>
+              </div>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+      
+      <div class="d-flex justify-content-center mt-5">
+        <button type="submit" class="btn rounded-1 btn-primary">Diagnosa</button>
+      </div>
+
+    </form>
+  </div>
+
+  <%- include('../partials/footer') %>
