@@ -2,18 +2,18 @@
     <div class="container my-5 rounded-2 py-3">
      
       <table class="table p-5">
-      <h2 class="fw-bold">Hasil Diagnosa</h2>
+      <h4 class="fw-bold">Hasil Diagnosa</h4>
       
       <% if (results[0].point.length !== 0) { %>
-        <h4 class="text-danger fw-bold">Positif</span> <%= results.length %> Penyakit/Hama</h4>
+        <h5 class="text-danger fw-bold">Positif</span> <%= results.length %> Penyakit/Hama</h4>
       <% } %>
       
       <% if (results[0].point.length === 0) { %>
-       <h4 class="text-success fw-bold">Negative Penyakit/Hama</h4>
+       <h5 class="text-success fw-bold">Negative Penyakit/Hama</h5>
       <% } %>
     
       <% for( const result of results ) { %>
-        <table class="table table-bordered table-striped table-hover border-dark table-sm">
+        <table class="table table-bordered table-striped table-hover border-dark">
             <tr>
               <th>Penyakit/Hama</th>
               <td><%= result.name %></td>
