@@ -177,9 +177,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/gejala', (req, res) => {
-    data.map((item) => {
-        item.point.length = 0;
-    })
+   
     res.render('form/index', {
         data
     });
@@ -259,6 +257,9 @@ app.get('/hasil', (req, res) => {
     res.render('diagnosa/index', {
         results
     });
+    data.map((item) => {
+        item.point.length = 0;
+    })
 })
 
 
