@@ -57,25 +57,6 @@ const data = [{
     }
 ]
 
-// const gejala = [
-//     `Apakah Memiliki Gejala Daun menguning?`,
-//     `Apakah Memiliki Gejala bintik putih pada tanaman?`,
-//     `Apakah Memiliki Gejala adanya alur berliku bekas kotoran berwarna putih?`,
-//     `Apakah Memiliki Gejala pucuk dan tunas-tunas samping berwarna keperak-perakan?`,
-//     `Apakah Memiliki Gejala serangan pada daun bagian bawah/seluruh daun?`,
-//     `Apakah Memiliki Gejala daun kerdil?`,
-//     `Apakah Memiliki Gejala daun cekung dan rapuh?`,
-//     `Apakah Memiliki Gejala permukaan daun bagian bawah berbintil coklat?`,
-//     `Apakah Memiliki Gejala bercak coklat pada daun?`,
-//     `Apakah Memiliki Gejala pertumbuhan bagian atas tanaman terhambat atau mati?`,
-//     `Apakah Memiliki Gejala daun layu dan gugur?`,
-//     `Apakah Memiliki Gejala layu permanen?`,
-//     `Apakah Memiliki Gejala tanaman membusuk atau mati?`,
-//     `Apakah Memiliki Gejala epidermis atau bagian atas daun rusak/transparan?`,
-//     `Apakah Memiliki Gejala tersisa hanya tulang daun pada tanaman?`,
-//     `Apakah Memiliki Gejala hama memakan tunas dan bunga?`
-// ]
-
 function addPoint(sample) {
     data.map((item) => {
         if (item.name === sample) {
@@ -223,7 +204,6 @@ app.post('/gejala', (req, res) => {
         g15,
         g16
     } = req.body;
-    console.log(req.body);
     if (g1 === 'y') {
         addPoint('Penggorok Daun')
         addPoint('Thrips')
@@ -276,7 +256,6 @@ app.post('/gejala', (req, res) => {
 
 app.get('/hasil', (req, res) => {
     const results = hasil();
-    console.log(data);
     res.render('diagnosa/index', {
         results
     });
