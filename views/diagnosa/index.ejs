@@ -1,35 +1,47 @@
 <%- include('../partials/diagnosa/header') %>
-    <div class="container my-5 rounded-2 py-3">
-     
-      <table class="table p-5">
+  <div id="content" class="container my-5 rounded-2 py-3">
+
+    <table class="table p-5">
       <h4 class="fw-bold">Hasil Diagnosa</h4>
-      
-      <% if (results[0].point.length !== 0) { %>
-        <h5 class="text-danger fw-bold">Positif</span> <%= results.length %> Penyakit/Hama</h4>
-      <% } %>
-      
-      <% if (results[0].point.length === 0) { %>
-       <h5 class="text-success fw-bold">Negative Penyakit/Hama</h5>
-      <% } %>
-      
-      <!-- <a href="/gejala">Diagnosa Ulang</a> -->
-    
-      <% for( const result of results ) { %>
-        <table class="table table-bordered table-striped border-dark">
-            <tr>
-              <th>Penyakit/Hama</th>
-              <td><%= result.name %></td>
-            </tr>
-            <tr>
-              <th>Gejala</th>
-              <td><%= result.gejala %></td>
-            </tr>
-            <tr>
-              <th>Solusi</th>
-              <td><%= result.solusi %></td>
-            </tr>
-          </table>
-          <% } %>
-        </table>
-    </div>
-    <%- include('../partials/footer') %>
+
+      <% if (results[0].point.length !==0) { %>
+        <h5 class="text-danger fw-bold">Positif</span>
+          <%= results.length %> Penyakit/Hama</h4>
+            <% } %>
+
+              <% if (results[0].point.length===0) { %>
+                <h5 class="text-success fw-bold">Negative Penyakit/Hama</h5>
+                <% } %>
+
+                  <h6>
+                    <%= new Date().toLocaleString('id-ID') %>
+                  </h6>
+                  
+                  <button class="btn btn-primary btn-sm rounded-1" id="btn-cetak"
+                    onclick="cetak('btn-cetak')">Cetak</button>
+
+                  <% for( const result of results ) { %>
+                    <table class="table table-bordered table-striped border-dark">
+                      <tr>
+                        <th>Penyakit/Hama</th>
+                        <td>
+                          <%= result.name %>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Gejala</th>
+                        <td>
+                          <%= result.gejala %>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Solusi</th>
+                        <td>
+                          <%= result.solusi %>
+                        </td>
+                      </tr>
+                    </table>
+                    <% } %>
+    </table>
+  </div>
+  <%- include('../partials/footer') %>
